@@ -1,36 +1,74 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miss Information Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    main > div {
+      flex: 1;
+      min-width: 300px;
+      padding: 10px;
+    }
+    footer {
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #eee;
+    }
+    video, iframe {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-  <meta charset="UTF-8">\
-  <title>Miss Information Project</title>\
-  <link rel="stylesheet" href="style.css">\
-</head>\
-<body>\
-  <header>\
-    <h1>Miss Information</h1>\
-    <p>Healthcare Answers You Can Trust</p>\
-  </header>\
-\
-  <main style="display: flex;">\
-    <div style="flex: 1; padding: 10px;">\
-      <!-- Embed your video here -->\
-      <video src="your-video.mp4" controls autoplay muted style="width: 100%;"></video>\
-    </div>\
-    <div style="flex: 1; padding: 10px;">\
-      <!-- Embed your chatbot here -->\
-      <iframe src="https://your-chatbot-url.vercel.app" width="100%" height="500px" frameborder="0"></iframe>\
-    </div>\
-  </main>\
-\
-  <footer>\
-    <p><small>Demonstration prototype. Not medical advice.</small></p>\
-  </footer>\
-</body>\
-</html>}
+<body>
+  <header>
+    <h1>Miss Information</h1>
+    <p>Healthcare Answers You Can Trust</p>
+  </header>
+
+  <main>
+    <div>
+      <!-- Example Video -->
+      <video controls autoplay muted playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div>
+      <!-- Example Chatbot -->
+      <iframe src="https://example.com" frameborder="0" height="500px"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>Demonstration prototype. Not medical advice.</small></p>
+  </footer>
+</body>
+</html>
